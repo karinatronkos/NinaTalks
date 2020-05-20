@@ -1,12 +1,12 @@
 # NinaTalks
 
-Integrantes:
-● Alexandre Abrahão
-● Fernanda Castro
-● Karina Tronkos
-● Matheus Leal
+**Integrantes:**
+- Alexandre Abrahão
+- Fernanda Castro
+- Karina Tronkos
+- Matheus Leal
 
-Objetivo:
+**Objetivo:**
 O objetivo deste trabalho é criar um web site voltado ao mundo UI/UX, tecnologia e desenvolvimento de software. Esse site irá possuir as seguintes páginas:
 - Home
 - About
