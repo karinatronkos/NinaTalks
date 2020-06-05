@@ -19,17 +19,7 @@ O objetivo deste trabalho é criar um web site voltado ao mundo UI/UX, tecnologi
 
 ### Usando Localmente
 
-- Para utilizar a versão correta do python precisamos instalar o pyenv. Basta executar o seguinte comando no seu terminal:
-
-```curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash ```
-
-- Aguarde a instalação e então será necessário colocar o seguinte trecho de código no seu .bashrc ou .zshrc:
-
-```
-export PATH=”~/.pyenv/bin:$PATH”
-eval “$(pyenv init -)”
-eval “$(pyenv virtualenv-init -)”
-```
+- Para utilizar a versão correta do python precisamos instalar o pyenv
 
 - Vamos instalar a versão 3.7 com o seguinte comando:
 
@@ -42,3 +32,31 @@ eval “$(pyenv virtualenv-init -)”
 - Execute o site localmente:
 
 ```make run```
+
+### Usando via Docker
+
+- Para utilizar a docker precisamos instalar o docker-compose
+
+- Execute o site localmente via docker:
+
+```make up```
+
+## Dependencias Necessárias
+
+### Pyenv
+
+Basta executar o seguinte comando no seu terminal:
+
+```curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash ```
+
+- Aguarde a instalação e então será necessário colocar o seguinte trecho de código no seu .bashrc ou .zshrc:
+
+```
+export PATH=”~/.pyenv/bin:$PATH”
+eval “$(pyenv init -)”
+eval “$(pyenv virtualenv-init -)”
+```
+
+### Docker 
+
+Você pode verificar as instruções de instalação do Docker [aqui](https://docs.docker.com/install/)
