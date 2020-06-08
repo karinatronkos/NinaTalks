@@ -35,4 +35,4 @@ def singleBlog():
     return render_template("single-blog.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host= '0.0.0.0')
