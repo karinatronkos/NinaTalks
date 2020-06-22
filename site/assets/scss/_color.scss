@@ -6,6 +6,10 @@ $white: #ffffff;
 $black: #16161a;
 $gray:#f7f7fd;
 
+//nina
+$blue: #3e4e9f;
+$pink: #ff76a4;
+
 // font-color
 $heading-color:#2b4b80;
 
@@ -69,7 +73,8 @@ $black-soft:#7e7e7e;
 // Section Bg color
 $blue-bg1:#00163e;
 
-
+//Home
+$blueHome:#3e4e9f;
 
 
 /*-------------Color include--------------*/
@@ -94,6 +99,10 @@ $blue-bg1:#00163e;
 }
 .testimonial-bg{
 	background: $testimonial-bg;
+}
+
+.blue-bg{
+	background: $blue;
 }
 
 
