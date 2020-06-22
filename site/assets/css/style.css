@@ -44,20 +44,25 @@
 }
 
 .boxed-btn {
-    background: #fff;
-    color: #ff5c97 !important;
+    width: 141px;
+    height: 39px;
+    border-radius: 54.6px;
+    box-shadow: 0 2px 4px 0 #f0588b;
+    background-color: #ff76a4;
+    color: #ffffff !important;
     display: inline-block;
-    padding: 18px 44px;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    padding-top: 7px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: bold;
     border: 0;
-    border: 1px solid #ff5c97;
-    letter-spacing: 3px;
+    border: 1px solid #ff76a4;
     text-align: center;
-    color: #ff5c97;
-    text-transform: uppercase;
-    cursor:pointer
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-style: normal;
+    cursor:pointer;
+    margin-bottom: 100px;
 }
 
 .boxed-btn:hover {
@@ -482,7 +487,7 @@ hr {
 }
 
 .hero-btn {
-    padding:30px 56px
+    padding-top: 10px;
 }
 
 .border-btn {
@@ -2273,8 +2278,8 @@ hr {
 }
 
 .create-padding {
-    padding-top: 240px;
-    padding-bottom:190px
+    padding-top: 61px;
+    padding-bottom:40px
 }
 
 @media only screen and (min-width: 1200px) and(max-width: 1600px) {
@@ -2473,8 +2478,7 @@ hr {
 }
 
 .footer-padding {
-    padding-top: 200px;
-    padding-bottom:15px
+    padding-top: 29px;
 }
 
 @media only screen and (min-width: 1200px) and(max-width: 1600px) {
@@ -2556,6 +2560,17 @@ hr {
     color:#ff5c97
 }
 
+/* .footer-transparrent {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index:9;
+    height: 80px;
+    background-color: #3e4e9f;
+
+} */
+
 .header-transparrent {
     position: absolute;
     top: 0;
@@ -2563,12 +2578,12 @@ hr {
     left: 0;
     z-index:9;
     background: #3e4e9f;
-    height: 80px;
+    height: 107px;
 }
 
 .main-header {
     z-index:3;
-    height: 70px;
+    height: 107px;
 
 }
 
@@ -2603,18 +2618,22 @@ hr {
 }
 
 .main-header .main-menu ul li a {
-    color: #002e5b;
-    font-weight: 400;
+    color: #ffff;
+    font-weight: 500;
     padding: 39px 19px;
+    font-family: Gilroy;
+    font-size: 18px;
     font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
     display: block;
-    font-size: 16px;
     -webkit-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    text-transform:capitalize
 }
 
 @media only screen and (min-width: 992px) and(max-width: 1199px) {
@@ -3026,7 +3045,7 @@ hr {
 }
 
 .services-area {
-    padding-top:270px
+    padding-top:207px
 }
 
 @media only screen and (min-width: 992px) and(max-width: 1199px) {
@@ -3294,7 +3313,6 @@ hr {
 }
 
 .we-create-area::before {
-    background-image: url(../img/shape/we-create_bg.png);
     position: absolute;
     content: "";
     top: 0;
@@ -3336,7 +3354,6 @@ hr {
 }
 
 .we-create-area::after {
-    background-image: url(../img/shape/we_create_right.png);
     position: absolute;
     content: "";
     z-index: -1;
@@ -4195,7 +4212,7 @@ hr {
 }
 
 .footer-area .footer-logo {
-    margin-bottom:30px
+    margin-bottom:0px;
 }
 
 .footer-area .footer-pera .info1 {
@@ -4298,7 +4315,14 @@ hr {
 }
 
 .footer-bottom-area .footer-border {
-    padding:40px 0px 23px
+    padding-top: 29px;
+    padding-bottom: 25px;
+    width: 1440px;
+    height: 80px;
+    background-color: #3e4e9f;
+    left: 0;
+    margin: auto;
+    right: 0;
 }
 
 @media only screen and (min-width: 768px) and(max-width: 991px) {
@@ -5611,16 +5635,18 @@ hr {
 }
 
 .form-contact .form-group {
-    margin-bottom:30px
+    margin-top:35px
 }
 
 .form-contact .form-control {
-    border: 1px solid #e5e6e9;
-    border-radius: 0px;
-    height: 48px;
-    padding-left: 18px;
+    padding-left: 15px;
     font-size: 13px;
-    background:transparent
+    background:transparent;
+
+    width: 278px;
+    height: 43px;
+    border-radius: 2px;
+    border: solid 1px #3e4e9f;
 }
 
 .form-contact .form-control:focus {
