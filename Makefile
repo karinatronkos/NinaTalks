@@ -5,8 +5,11 @@ help:
 setup-python:       ## Instala todas as dependências necessárias para rodar o projeto
 	pip install -r requirements.txt
 
-run:                ## Executa a aplicação localmente
+run-web:                ## Executa a aplicação web localmente
 	cd ./site && python server.py
 
+run-admin:              ## Executa a aplicação do administrador localmente
+	cd ./admin && python server.py
+
 up:		   ## Executa a aplicação via docker compose
-	docker-compose up
+	docker-compose up --force-recreate

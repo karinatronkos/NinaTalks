@@ -1,2 +1,5 @@
 site/assets/* linguist-detectable=false
 site/templates/* linguist-detectable=false
+
+admin/assets/* linguist-detectable=false
+admin/templates/* linguist-detectable=false

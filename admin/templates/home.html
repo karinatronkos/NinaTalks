@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Nina Editor </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+		<!-- CSS here -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+            <link rel="stylesheet" href="assets/css/slicknav.css">
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="assets/css/responsive.css">
+   </head>
+
+	<body>
+		<!-- Slider Area Start-->
+		<div style="  padding-top: 50px;">
+			<div>
+				<!-- Section-tittle -->
+				<div class="row d-flex justify-content-center">
+					<div class="col-lg-8">
+						<div class="section-tittle text-center mb-80">
+							<span>NinaTalks Blog Editor</span>
+							<h2>Posts</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Slider Area End-->
+		<form method="POST">
+			<div class="section-top-border">			
+				<input type="submit" name="action" class="genric-btn success" value="New Post">
+			</div>
+		</form>
+		{% block content %}
+		<!-- Start Sample Area -->
+		<div class="section-top-border">
+			<h3 class="mb-30">Posts Created</h3>
+			<div class="progress-table-wrap">
+				<div class="progress-table">
+					<div class="table-head">
+						<div class="serial">#</div>
+						<div class="country">Name</div>
+						<div class="visit">Preview</div>
+					</div>
+					{% for text in archive %}
+					<form method="POST">
+						<div class="table-row">
+							<div class="serial"></div>
+							<div class="serial">{{text.name}}</div>
+							<div><input type="hidden" name="file_link" value="{{text.file_link}}"></div>
+							<div class="serial"><input type="submit" name="action" class="genric-btn success" value="Preview"></div>
+						</div>
+					</form>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<!-- End Sample Area -->
+		{% endblock%}}
+	</body>
+</html>

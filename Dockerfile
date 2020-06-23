@@ -4,10 +4,9 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get dist-upgrade -y \
     && apt-get install -y \
-    build-essential
+    build-essential \
+    make
 
-ADD site .
-ADD requirements.txt .
-ADD Makefile .
+ADD . .
 
 EXPOSE 5000

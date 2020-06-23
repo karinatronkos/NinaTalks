@@ -2,8 +2,29 @@ version: '3'
 services:
     web:
         build: .
-        command: bash -c "sleep 15 && make setup-python && ls && python server.py"
+        command: bash -c "sleep 15 && make setup-python && make run-web"
+        ports:
+            - "8080:5000"
+        environment:
+            - TZ=America/Sao_Paulo
+            - STATIC_PATH=${STATIC_PATH}
+        networks:
+            - development-network
+        volumes:
+            - /opt/
+    editor:
+        build: .
+        command: bash -c "sleep 15 && make setup-python && make run-admin"
         ports:
             - "5000:5000"
         environment:
             - TZ=America/Sao_Paulo
+            - STATIC_PATH=${STATIC_PATH}
+        networks:
+            - development-network
+        volumes:
+            - /opt/:/opt/
+
+networks:
+    development-network:
+        driver: bridge
