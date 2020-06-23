@@ -104,7 +104,7 @@ def login():
 # *		A rota '/home' do site foi chamada
 # *    
 # *  Verificação:
-# *     - Existe um arquivo dentro do projeto com o seguinte path /templates/index.html
+# *     - Existe um arquivo dentro do projeto com o seguinte path /templates/home.html
 # *     - Em caso method de Post, existe uma rota para o '/home'
 # *             
 # *  Assertiva de Saída: 
@@ -146,7 +146,7 @@ def home():
 # *		A rota '/editor' do site foi chamada
 # *    
 # *  Verificação:
-# *     - Existe um arquivo dentro do projeto com o seguinte path /templates/index.html
+# *     - Existe um arquivo dentro do projeto com o seguinte path /templates/editor.html
 # *     - Em caso method de Post, existe uma rota para o /home
 # *             
 # *  Assertiva de Saída: 
