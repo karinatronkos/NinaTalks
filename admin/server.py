@@ -5,23 +5,112 @@ from os import listdir
 from os.path import isfile, join
 
 app = Flask(__name__, static_url_path='')
-
+# /***********************************************************************
+# *
+# *  $FC Função: send_js()
+# *
+# *  $ED Descrição da função
+# *     Entrega as páginas de dados estáticos do site
+# *
+# *  $EP Parâmetros 
+# *	    path --> String
+# *						
+# *  $FV Valor retornado
+# *     Arquivo armazendo dentro do diretório /assets
+# *
+# *  Assertiva de Entrada: 
+# *		A rota '/assets' do site foi chamada
+# *    
+# *  Verificação:
+# *     Existe um arquivo dentro do projeto com o seguinte path /assets/<path>
+# *                    
+# *  Assertiva de Saída: 
+# *		A rota '/assets' entrega o arquivo que corresponde ao <path> existente dentro de /assests
+# *
+# ***********************************************************************/
 @app.route('/assets/<path:path>')
 def send_js(path):
     return send_from_directory('/assets', path)
 
-
+# /***********************************************************************
+# *
+# *  $FC Função: posts()
+# *
+# *  $ED Descrição da função
+# *     Entrega as páginas de blogs do site
+# *
+# *  $EP Parâmetros 
+# *	    path --> String
+# *						
+# *  $FV Valor retornado
+# *     Arquivo armazendo dentro do diretório /post
+# *
+# *  Assertiva de Entrada: 
+# *		A rota '/post' do site foi chamada
+# *    
+# *  Verificação:
+# *     Existe um arquivo dentro do projeto com o seguinte path /opt/<path>
+# *                    
+# *  Assertiva de Saída: 
+# *		A rota '/post' entrega o arquivo que corresponde ao <path> existente dentro de /post
+# *
+# ***********************************************************************/
 @app.route('/post/<path:path>')
 def posts(path):
     return send_from_directory(os.environ['STATIC_PATH'], path)
 
-
+# /***********************************************************************
+# *
+# *  $FC Função: login()
+# *
+# *  $ED Descrição da função
+# *     Entrega a página de início do site
+# *
+# *  $EP Parâmetros --
+# *						
+# *  $FV Valor retornado
+# *     Entrega o arquivo index.html com todas as referências montadas 
+# *
+# *  Assertiva de Entrada: 
+# *		A rota '/' do site foi chamada
+# *    
+# *  Verificação:
+# *     - Existe um arquivo dentro do projeto com o seguinte path /templates/index.html
+# *     - Em caso method de Post, existe uma rota para o /home
+# *             
+# *  Assertiva de Saída: 
+# *		A rota '/' entrega o arquivo index.html montado e após o login ele redireciona para o /home
+# *
+# ***********************************************************************/
 @app.route("/", methods=['GET','POST'])
 def login():
     if request.method == "POST":
-        return redirect(url_for('editor'))
+        return redirect(url_for('home'))
     return render_template("login.html")
 
+# /***********************************************************************
+# *
+# *  $FC Função: home()
+# *
+# *  $ED Descrição da função
+# *     Entrega a página de gerencia de posts
+# *
+# *  $EP Parâmetros --
+# *						
+# *  $FV Valor retornado
+# *     Entrega o arquivo index.html com todas as referências montadas 
+# *
+# *  Assertiva de Entrada: 
+# *		A rota '/home' do site foi chamada
+# *    
+# *  Verificação:
+# *     - Existe um arquivo dentro do projeto com o seguinte path /templates/home.html
+# *     - Em caso method de Post, existe uma rota para o '/home'
+# *             
+# *  Assertiva de Saída: 
+# *		A rota '/home' entrega o arquivo index.html montado e após o login ele redireciona para o '/home'
+# *
+# ***********************************************************************/
 @app.route("/home", methods=['GET','POST'])
 def home():
     if request.method == "POST":
@@ -41,6 +130,29 @@ def home():
     print(thislist, flush=True)
     return render_template("home.html", archive=thislist)
 
+# /***********************************************************************
+# *
+# *  $FC Função: editor()
+# *
+# *  $ED Descrição da função
+# *     Entrega a página de edição de posts
+# *
+# *  $EP Parâmetros --
+# *						
+# *  $FV Valor retornado
+# *     Entrega o arquivo editor.html com todas as referências montadas 
+# *
+# *  Assertiva de Entrada: 
+# *		A rota '/editor' do site foi chamada
+# *    
+# *  Verificação:
+# *     - Existe um arquivo dentro do projeto com o seguinte path /templates/editor.html
+# *     - Em caso method de Post, existe uma rota para o /home
+# *             
+# *  Assertiva de Saída: 
+# *		A rota '/' entrega o arquivo editor.html montado e após a criação do post redireciona para o /home
+# *
+# ***********************************************************************/
 @app.route("/editor", methods=['GET','POST'])
 def editor():
     if request.method == "POST":
