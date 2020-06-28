@@ -2,7 +2,7 @@ version: '3'
 services:
     web:
         build: .
-        command: bash -c "sleep 15 && make setup-python && make run-web"
+        command: bash -c "sleep 15 && make run-web"
         ports:
             - "8080:5000"
         environment:
@@ -14,7 +14,7 @@ services:
             - /opt/
     editor:
         build: .
-        command: bash -c "sleep 15 && make setup-python && make run-admin"
+        command: bash -c "sleep 15 && make run-admin"
         ports:
             - "5000:5000"
         environment:
