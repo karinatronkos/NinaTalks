@@ -18,4 +18,4 @@ echo " ";
 echo "Criando um cluster de 3 nós chamado hello-cluster"
 echo " ";
 echo " ";
-gcloud container clusters create hello-cluster --num-nodes=3;
+gcloud container clusters create ninatalks-cluster --num-nodes=3;

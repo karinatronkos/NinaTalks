@@ -1,4 +1,4 @@
-IMAGE_GCP_PATH=gcr.io/sixth-impulse-281502/flask-fire
+IMAGE_GCP_PATH=gcr.io/sixth-impulse-281502/nina-talks
 
 help:
 	@echo "---------------- HELP ---------------------" 
@@ -20,13 +20,13 @@ create-gcp-enviroment: 	## Cria ambiente no GCP
 	bash scripts/create_gcp_enviroment.sh
 
 image-push: 		## Envia imagem base docker para o GCP
-	gcloud builds submit --tag ${IMAGE_GCP_PATH}:v1
+	gcloud builds submit --tag ${IMAGE_GCP_PATH}
 
 image-build: 		## Build imagem base docker para o GCP
-	docker build -t ${IMAGE_GCP_PATH}:v1 .
+	docker build -t ${IMAGE_GCP_PATH} .
 
 image-run: 		## Roda imagem base docker para o GCP
-	docker run -p 8080:8080 -it ${IMAGE_GCP_PATH}:v1
+	docker run -p 8080:8080 -it ${IMAGE_GCP_PATH}
 
 deploy:			## Deploy da imagem para o cluster kubernetes no GCP
-	kubectl create deployment hello-web --image=${IMAGE_GCP_PATH}:v1
+	kubectl create deployment nina-talks --image=${IMAGE_GCP_PATH}
