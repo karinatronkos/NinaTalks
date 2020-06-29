@@ -8,7 +8,7 @@ setup-python:       	## Instala todas as dependências necessárias para rodar o
 	pip install -r requirements.txt
 
 run-web:           	## Executa a aplicação web localmente
-	cd ./site && python server.py
+	cd ./ninatalks && python server.py
 
 run-admin:          	## Executa a aplicação do administrador localmente
 	cd ./admin && python server.py
