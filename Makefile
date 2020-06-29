@@ -1,4 +1,4 @@
-IMAGE_GCP_PATH=gcr.io/sixth-impulse-281502/nina-talks
+IMAGE_GCP_PATH=gcr.io/${GCP_PROJECT_ID}/nina-talks
 
 help:
 	@echo "---------------- HELP ---------------------" 
