@@ -9,9 +9,7 @@ RUN apt-get update \
     make
 
 # Clonando o código fonte do projeto
-ADD ninatalks/ /usr/local/src/
-ADD requirements.txt /usr/local/src/
-ADD Makefile /usr/local/src/
+ADD . /usr/local/src/
 
 WORKDIR /usr/local/src/
 
@@ -20,7 +18,4 @@ RUN make setup-python
 RUN pip install gunicorn
 
 # Preparando para a execução
-ENV PORT 8080
-
-# Execução do projeto
-CMD gunicorn --bind 0.0.0.0:$PORT server:app
+ENV PORT 5000
