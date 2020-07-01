@@ -147,7 +147,6 @@ h1, h2, h4, h5, h6 {
 }
 
 h3 {
-    width: 335px;
     height: 45px;
     font-family: Gilroy;
     font-size: 45px;
@@ -436,7 +435,7 @@ hr {
     color: #ffffff;
 }
 
-.btn::before {
+/*.btn::before {
     content: "";
     position: absolute;
     left: 0;
@@ -451,7 +450,7 @@ hr {
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
     transform:scaleX(0)
-}
+}*/
 
 .btn:hover::before {
     transform: scaleX(1);
@@ -630,6 +629,10 @@ hr {
 
 .mt-15 {
     margin-top:15px
+}
+
+.mt-16{
+    margin-top: 16px
 }
 
 .mt-20 {
@@ -2583,7 +2586,6 @@ hr {
 
 .main-header {
     z-index:3;
-    height: 107px;
 
 }
 
@@ -3464,6 +3466,7 @@ hr {
 .we-create-area .we-create-cap p {
     padding-right: 50px;
     margin-bottom:56px;
+    margin-top: 24px;
     width: 570px;
     height: 310px;
     font-family: Gilroy;
@@ -7075,6 +7078,10 @@ b, sup, sub, u, del {
     margin-top:30px
 }
 
+.mt-50 {
+    margin-top:50px
+}
+
 .switch-wrap {
     margin-bottom: 10px
 }
@@ -7119,10 +7126,19 @@ b, sup, sub, u, del {
   }
 
 
-
-
   .conteudo-img{
     width: 530px;
     height: 375px;
     object-fit: contain;
   }
+
+.col-palestras-eventos-4 {
+    -ms-flex: 0 0 25.0%;
+    flex: 0 0 25.0%;
+    max-width: 25.0%;
+    margin-top: 15px;
+}
+
+.palestras-eventos-fotos{
+    margin-left: 0;
+}
