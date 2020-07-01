@@ -52,7 +52,7 @@
     color: #ffffff !important;
     display: inline-block;
     padding-top: 7px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 16px;
     font-weight: bold;
     border: 0;
@@ -148,7 +148,7 @@ h1, h2, h4, h5, h6 {
 
 h3 {
     height: 45px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 45px;
     font-weight: bold;
     font-stretch: normal;
@@ -161,7 +161,7 @@ h3 {
 h7 {
     width: 478px;
     height: 119px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 34px;
     font-weight: bold;
     font-stretch: normal;
@@ -174,7 +174,7 @@ h7 {
 .h8 {
     width: 570px;
     height: 248px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
@@ -195,6 +195,19 @@ p {
     margin-bottom: 15px;
     font-weight:normal
 }
+
+depoimentos-p-1{
+    width: 272px;
+    height: 136px;
+    font-family: Poppins;
+    font-size: 17.1px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
 
 .bg-img-1 {
     background-image:url(../img/slider/slider-img-1.jpg)
@@ -424,7 +437,7 @@ hr {
     border-radius: 71px;
     box-shadow: 0 2px 4px 0 #f0588b;
     background-color: #ff76a4;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 20px;
     font-weight: bold;
     font-stretch: normal;
@@ -2361,7 +2374,7 @@ hr {
 }
 
 .tips-padding {
-    padding-top: 185px;
+    padding-top: 101px;
     padding-bottom:150px
 }
 
@@ -2623,7 +2636,7 @@ hr {
     color: #ffff;
     font-weight: 500;
     padding: 39px 19px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
     font-stretch: normal;
@@ -2966,7 +2979,7 @@ hr {
 
     width: 478px;
     height: 119px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 34px;
     font-weight: bold;
     font-stretch: normal;
@@ -3412,7 +3425,7 @@ hr {
 
     width: 335px;
     height: 45px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 45px;
     font-weight: bold;
     font-stretch: normal;
@@ -3425,7 +3438,7 @@ hr {
 .we-create-area .we-create-cap h8 {
     width: 570px;
     height: 248px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
@@ -3469,7 +3482,7 @@ hr {
     margin-top: 24px;
     width: 570px;
     height: 310px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
@@ -5623,7 +5636,7 @@ hr {
 .contact-title {
     width: 803px;
     height: 45px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 45px;
     font-weight: bold;
     font-stretch: normal;
@@ -7094,26 +7107,19 @@ b, sup, sub, u, del {
     object-fit: contain;
     border-radius: 55px;
     background-color: #3e4e9f;
+    padding-left: 1px;
+    padding-top: 10px;
+    text-align: left;
   }
 
   .aspas {
-    width: 73px;
-    height: 189px;
-    object-fit: contain;
-    font-family: LucidaGrande;
-    font-size: 160.6px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #b2bfff;
+    margin-left: -15px;
   }
 
   .Depoimentos {
     width: 280px;
     height: 45px;
-    font-family: Gilroy;
+    font-family: Poppins;
     font-size: 45px;
     font-weight: bold;
     font-stretch: normal;
@@ -7141,4 +7147,38 @@ b, sup, sub, u, del {
 
 .palestras-eventos-fotos{
     margin-left: 0;
+}
+
+.col-depoimentos{
+    -ms-flex: 0 0 25.0%;
+    flex: 0 0 33.3333%;
+    max-width: 33.333%;
+    margin-top: 52px;
+}
+
+.col-depoimentos-2{
+    -ms-flex: 0 0 25.0%;
+    flex: 0 0 33.3333%;
+    max-width: 33.333%;
+    margin-top: 171px;
+}
+
+.col-depoimentos-3{
+    -ms-flex: 0 0 25.0%;
+    flex: 0 0 33.3333%;
+    max-width: 33.333%;
+    margin-top: 24px;
+}
+
+
+.margin-baloes-1-3{
+    margin-top: -20px;
+    margin-right: 38px;
+    margin-left: 56px;
+}
+
+.margin-balao-2{
+    margin-top: -20px;
+    margin-right: 60px;
+    margin-left: 60px;
 }
