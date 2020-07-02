@@ -260,6 +260,7 @@ p-blog{
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
+    margin-bottom: 15px;
     color: #3e4e9f;
 }
 
@@ -5272,7 +5273,8 @@ hr {
 
 .single-post-area .blog_details p {
     margin-bottom: 20px;
-    font-size:15px
+    font-size: 18px;
+    color: #3e4e9f;
 }
 
 .single-post-area .quote-wrapper {
@@ -7275,6 +7277,7 @@ b, sup, sub, u, del {
     border-radius: 9.3px;
     background-color: #ff76a4;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .tag-UI {
@@ -7283,6 +7286,7 @@ b, sup, sub, u, del {
     border-radius: 9.3px;
     background-color: #ff99bb;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .tag-tecnologia {
@@ -7291,6 +7295,7 @@ b, sup, sub, u, del {
     border-radius: 9.3px;
     background-color: #fb397a;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .tag-geek {
@@ -7299,6 +7304,7 @@ b, sup, sub, u, del {
     border-radius: 9.3px;
     background-color: #d53a6e;
     text-align: center;
+    margin-bottom: 10px;
   }
 
 .col-blog-tags-titulo{
