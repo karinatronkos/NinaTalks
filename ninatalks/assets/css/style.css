@@ -214,6 +214,20 @@ h10{
     color: #ffffff;
 }
 
+h11{
+    width: 71px;
+    height: 14px;
+    font-family: Poppins;
+    font-size: 14.8px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
 p {
     font-family: "Poppins", sans-serif;
     color: #707b8e;
@@ -7276,4 +7290,12 @@ b, sup, sub, u, del {
 
 .margin-tag{
     margin-top: -24px;
+}
+
+.freebies-tag{
+    width: 101px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #ff76a4;
+    text-align: center;
 }
