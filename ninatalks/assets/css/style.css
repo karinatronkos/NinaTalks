@@ -228,6 +228,19 @@ h11{
     color: #ffffff;
 }
 
+h12{
+    width: 200px;
+    height: 16px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3e4e9f;
+}
+
 p {
     font-family: "Poppins", sans-serif;
     color: #707b8e;
@@ -235,6 +248,19 @@ p {
     line-height: 30px;
     margin-bottom: 15px;
     font-weight:normal;
+}
+
+p-blog{
+    width: 803px;
+    height: 666px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3e4e9f;
 }
 
 depoimentos-p-1{
@@ -6050,7 +6076,6 @@ hr {
 
 .text-heading {
     margin-bottom: 30px;
-    font-size:24px
 }
 
 b, sup, sub, u, del {
@@ -7298,4 +7323,8 @@ b, sup, sub, u, del {
     border-radius: 13px;
     background-color: #ff76a4;
     text-align: center;
+}
+
+.bottom{
+    padding-bottom: 0px;
 }
