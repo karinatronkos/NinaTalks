@@ -41,6 +41,10 @@ O objetivo deste trabalho é criar um web site voltado ao mundo UI/UX, tecnologi
 
 ```make up```
 
+### Versão Beta
+
+Você pode acessar a versão beta do site por esse [link](http://35.223.96.85)
+
 ## Dependencias Necessárias
 
 ### Pyenv
